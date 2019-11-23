@@ -1,0 +1,774 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: local('../fonts/Gotham Pro Bold'), local('../GothamPro-Bold'),
+        url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+        url('../fonts/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('../fonts/GothamProNarrow-Medium.eot');
+    src: local('../fonts/Gotham Pro Narrow Medium'), local('../fonts/GothamProNarrow-Medium'),
+        url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamProNarrow-Medium.woff2') format('woff2'),
+        url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
+        url('../fonts/GothamProNarrow-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('../fonts/GothamPro-Light.eot');
+    src: local('../fonts/Gotham Pro Light'), local('../fonts/GothamPro-Light'),
+        url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Light.woff2') format('woff2'),
+        url('../fonts/GothamPro-Light.woff') format('woff'),
+        url('../fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*container*/
+.container{
+    max-width: 1200px;
+}
+.container-fluid--team{
+    padding: 0;
+}
+.container-fluid--bd{
+    border-bottom: 1px solid #a8a8a8;
+}
+.container-fluid-inner{
+    background-image: url(../img/inner/1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container-fluid--agency{
+    background-color: #11749e;
+}
+.conteiner--rasporka{
+    color: #11749e;
+}
+.rasporka-b{
+    color: #fff;
+    font-size: 0px;
+}
+
+
+/*navbar*/
+
+.navbar-brand{
+    background-color: #d6d6d6;
+    margin-left: 10px;
+}
+.navbar-h{
+    display: flex;
+    align-items: center;
+    height: 110px;
+}
+.navbar-brand img{
+    transition:transform 0.3s linear;
+}
+.navbar-brand img:hover{
+    transform: translate(-10px,-8px);
+}
+.navbar-nav{
+    font-size: 20px;
+}
+.nav-item{
+    padding:0 1rem;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav-link{
+    padding: 0rem !important;
+    color: #fff;
+    transition: opacity 0.3s linear;
+}
+.nav-link:hover:after{
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #11749e;
+    display: block;
+    position:absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+}
+.nav-link:hover{
+    opacity: 0.8 !important;
+    color: #fff;
+}
+
+.navbar-icons{
+    display: none;
+    font-size: 20px;
+}
+.navbar-icons i:hover{
+    opacity: 0.5;
+}
+.navbar-toggler .navbar-dark{
+    position: absolute;
+    left: 100%;
+}
+.show .nav-item{
+    height: auto;
+
+}
+.collapsing .nav-item{
+    height: auto;
+}
+.show .nav-link:hover:after{
+    display: none;
+}
+
+
+
+
+/*inner*/
+.inner{
+    width: 100%;
+    position: absolute;
+    top:40%;
+}
+.inner_items{
+    text-align: center;
+    width: 100%;
+}
+.inner_item{
+width: 100%;
+}
+.inner_title {
+    font-family: 'Gotham Pro';
+    font-size: 152px;
+    text-transform: uppercase;
+    line-height: 0.8;
+    margin-bottom: 40px;
+    color:#f5f5f5;
+}
+.inner_subtitle{
+    font-family: 'Gotham Pro Medium';
+    font-size: 25px;
+    letter-spacing: 20px;
+    line-height: 0.8;
+    color: #11749e;
+}
+.inner_text_btn{
+    font-size: 13px;
+    margin-top: 100px;
+    color:#f5f5f5;
+}
+.inner_button{
+    position: absolute;
+    top:95%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+
+
+
+
+/*agency*/
+
+.agency_items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.agency_item{
+    text-align: center;
+    color: #fff;
+    min-width: 270px;
+}
+.agency_icon{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #fff;
+    align-items: center;
+    height: 135px;
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.agency_title{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+.agncy_info{
+    margin-bottom: 130px;
+    color:#90bed2;
+}
+
+
+
+/*team*/
+.card-group--team .card{
+    border: none;
+}
+.card-group--team .card-img{
+    border-radius: 0;
+}
+.card--team{
+        border-radius: 0;
+}
+.card--team-w{
+    background-color:#f3f3f3;
+}
+.card-img--team{
+    overflow: hidden;
+}
+.card--team-b{
+    background: #222222;
+    color: #f0f0f0;
+}
+.card--team-b .card-title--team{
+    color:#fff;
+}
+.card-subtitle--team{
+    padding-left: 140px;
+    font-size: 15px;
+    padding-top: 80px;
+    font-family: 'Gotham-Light';
+}
+.card-title--team{
+    padding-left: 140px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.card-body--team{
+    padding-left: 140px;
+    font-size: 15px;
+    font-family: 'Gotham-Light';
+}
+
+
+
+/*Header*/
+.header{
+    position: relative;
+}
+.header_b{
+font-size: 180px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #d7d7d7;
+font-weight: 700;
+}
+.header_subtitle{
+    margin-top: 285px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.header_title{
+    font-size: 37px;
+    position: absolute;
+    top: 50%;
+    line-height: 1;
+    transform: translate(-0%,-25%);
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+.header_title--W{
+    color: #fff;
+}
+.header--C{
+    opacity: 0.2;
+}
+.rasporka-C{
+    padding-top: 340px;
+    font-size: 0px;
+}
+
+
+
+
+
+
+
+/*Blog*/
+.blog_items{
+    text-align: center;
+    max-width: 1300px;
+}
+.blog_title{
+    text-transform: uppercase;
+    color: #11749e;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.blog_data{
+    margin-bottom: 115px;
+}
+.blog_img img{
+    width: 100%;
+    max-width:350px;
+}
+
+
+
+
+
+
+/*Some_info*/
+.some_info{
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+.some_info_item{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.some_info_i{
+    color: #fff;
+    font-size: 40px;
+    margin-right: 30px;
+}
+.some_info_data{
+    color: #c0dae5;
+}
+
+
+/*Acita*/
+.acita{
+    background-image: url(../img/acita/1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.acita_title{
+    font-size: 25px;
+    padding-top: 230px;
+    text-transform: uppercase;
+}
+.acita_data{
+    width: 90%;
+    padding: 45px 0px 70px 0px;
+}
+.acita_advantage{
+    margin-bottom: 220px;
+}
+.advantage_item{
+    padding: 15px 0px 15px 20px;
+    display: block;
+    background-color: #11749e;
+    margin-bottom: 20px;
+    width: 85%;
+    text-transform: uppercase;
+}
+.advantage_item:first-child{
+    width: 80%;
+}
+.advantage_item:last-child{
+    width: 90%;
+}
+.acita_item{
+    position: relative;
+}
+
+.acita_img{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Command*/
+.command_items{
+    margin-bottom: 140px;
+}
+.com_item{
+    position: relative;
+    display:flex;
+    justify-content: center;
+}
+.com_descr{
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 85%;
+    left: 10%;
+}
+.com_descr_title{
+    font-size: 20px;
+    color: #11749e;
+    margin-top: 25px;
+}
+.com_descr_spec{
+    font-size: 15px;
+    font-weight: 500;
+}
+.com_img{
+    width: 100%;
+    max-width: 320px;
+}
+
+
+
+
+
+/*Your_project*/
+.y_progect{
+    background-image: url(../img/y_project/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.y_progect .header{
+    color: #fff;
+}
+.form_item{
+}
+.form_item input{
+    width: 100%;
+    background-color: transparent;
+    padding-left: 20px;
+    border: 1px solid #fff;
+}
+.form_item input::placeholder{
+    color:#fff;
+}
+.form_item textarea::placeholder{
+    color:#fff;
+}
+.form_item textarea{
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    margin-top:40px;
+    padding-left: 20px;
+    border: 1px solid #fff;
+    resize: none;
+}
+.form_item_btn{
+    margin: 45px 0px 100px 0px;
+}
+.form_item_btn .btn{
+    padding: 10px 70px;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+
+
+
+/*Map*/
+.map iframe{
+    width: 100%;
+    height: 320px;
+}
+
+
+
+/*footer*/
+.footer{
+    background: #282828;
+    color: #fff;
+}
+.footer_items{
+    padding: 45px 0px 50px 0;
+}
+
+
+
+
+
+
+
+
+
+/* xs - устройства (до 576px) */
+/* CSS для ширины, которая меньше 575px (включительно) */
+
+/* sm-устройства (больше или равно 576px) */
+@media (max-width: 576px) {
+    /*inner*/
+  .inner_title{
+      font-size: 30px;
+      margin-bottom: 20px;
+  }
+  .inner_subtitle{
+      font-size: 10px;
+      letter-spacing: 3px;
+  }
+  /*header*/
+  .header_title{
+        font-size: 15px;
+  }
+  .header_subtitle{
+      font-size: 12px!important;
+  }
+
+          /*agency*/
+    .agncy_info{
+        margin-bottom: 50px;
+    }
+
+    /*team*/
+    .card-group .card{
+        margin-bottom: 0px;
+    }
+  .card-subtitle{
+      padding-left: 10px;
+  }
+  .card-img img{
+      width: 100%;
+  }
+  .card-title{
+      padding-left: 10px;
+  }
+  .card-body{
+      padding-left: 10px;
+  }
+  .card-group{
+    flex-direction: column;
+  }
+  .card--team-w{
+    order: -1;
+  }
+
+/*acita*/
+ .acita_img{
+     visibility: hidden;
+ }
+
+ /*command*/
+ .com_item {
+     max-width: 320px;
+     margin:20px auto ;
+ }
+
+ /*y-progect*/
+ .form_item {
+     margin-bottom: 20px;
+ }
+/*footer*/
+.footer_items{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer_item{
+    margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 576px) {
+  /* CSS для: 576px <= ширины <= 767px */
+  /*inner*/
+  .inner_subtitle{
+      font-size: 12px;
+      letter-spacing: 8px;
+  }
+  .inner_title{
+      font-size: 70px;
+  }
+/*header*/
+.header_title{
+      font-size: 18px;
+}
+
+.header_subtitle{
+    font-size: 20px;
+}
+
+        /*agency*/
+  .agncy_info{
+      margin-bottom: 70px;
+  }
+
+  /*team*/
+.card-subtitle{
+    padding-left: 40px;
+}
+.card-img img{
+    width: 100%;
+}
+.card-title{
+    padding-left: 40px;
+}
+.card-body{
+    padding-left: 40px;
+}
+.card-group{
+  flex-direction: column;
+}
+.card--team-w{
+  order: -1;
+}
+
+/*acita*/
+.acita_img{
+   visibility: hidden;
+}
+/*command*/
+.com_item {
+    max-width: 320px;
+    margin:20px auto ;
+}
+
+}
+
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+  .inner_title{
+      font-size: 90px;
+  }
+  .inner_subtitle{
+      font-size: 15px;
+      letter-spacing: 10px;
+  }
+
+  /*header*/
+  .header_title{
+        font-size: 20px;
+
+  }
+  .header_subtitle{
+      font-size: 23px;
+  }
+
+        /*agency*/
+  .agncy_info{
+      margin-bottom: 70px;
+  }
+
+  /*acita*/
+  .acita_img{
+     visibility: visible;
+  }
+
+
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 992px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+/*navbar*/
+  .navbar-brand{
+      margin-right: 140px;
+  }
+  .navbar-icons{
+          display: block !important;
+  }
+  .navbar-icons a{
+      margin: 0 15px;
+      font-size: 20px;
+      color: #f5f5f5
+  }
+
+/*inner*/
+  .inner_subtitle{
+      font-size: 20px;
+      letter-spacing: 10px;
+  }
+  .inner_title{
+      font-size: 128px;
+  }
+
+  /*header*/
+  .header_title{
+        font-size: 23px;
+
+  }
+
+  .header_subtitle{
+      font-size: 25px;
+  }
+
+      /*agency*/
+  .agency_items{
+    justify-content: space-between;
+  }
+  .agncy_info{
+      margin-bottom: 90px;
+  }
+
+  /*team*/
+.card-subtitle{
+    padding-left: 100px;
+}
+.card-title{
+    padding-left: 100px;
+}
+.card-body{
+    padding-left: 100px;
+}
+.card-group{
+flex-direction: row;
+}
+.card--team-w{
+order: 0;
+}
+.card-img img{
+width: auto;
+}
+}
+
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1200px) {
+  /* CSS для: ширины >= 1200px */
+  /*navbar*/
+  .navbar-brand{
+      margin-right: 240px;
+  }
+  .navbar-icons a{
+  font-size: 20px;
+      margin: 0 26px;
+      color: #f5f5f5
+  }
+
+  /*inner*/
+  .inner_title {
+      font-size: 152px;
+      margin-bottom: 40px;
+  }
+  .inner_subtitle{
+      font-size: 25px;
+      letter-spacing: 20px;
+  }
+  /*header*/
+  .header_title{
+        font-size: 25px;
+
+  }
+  .header_subtitle{
+      font-size: 30px;
+  }
+
+
+}
